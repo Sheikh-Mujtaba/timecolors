@@ -1,0 +1,7 @@
+.nav-section{
+    padding: 3vh 7vw 3vh 7vw;
+}
+.nav-wrapper{
+    display: flex;
+    /* justify-content: space-around; */
+}
