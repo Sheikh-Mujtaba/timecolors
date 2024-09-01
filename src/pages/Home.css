@@ -13,7 +13,12 @@
 }
 
 .heading {
-    flex: 1; /* Allows the heading to take up the necessary space */
+    /* flex: 1; Allows the heading to take up the necessary space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
 }
 .not-avaiable {
     display: none;
@@ -25,10 +30,10 @@ h1 {
 }
 
 .boxes {
-    flex: 1; /* Allows the boxes to take up the necessary space */
+    /* flex: 1; Allows the boxes to take up the necessary space */
     display: flex;
-    gap: 2vw;
-    justify-content: center;
+    gap: 1.3vw;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -37,6 +42,18 @@ h1 {
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn {
+    border: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .box {
